@@ -16,7 +16,8 @@ def find_all_users_name(data: dict)->list:
         for k, v in gatherTwo:
             if k == 'actor_id' or k == 'from_id':
                 users.append(v)
-    return set(users)
+    separateUsers = set(users)
+    return list(separateUsers)
 
 data1 = read_data('data/result.json')
 print(find_all_users_name(data1))
