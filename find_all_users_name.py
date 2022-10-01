@@ -49,7 +49,7 @@ def find_all_users_name(data: dict)->list:
     for i in range(len(users)):
         if not users[i] in usersTwo:
             usersTwo.append(users[i])           
-    return usersTwo, len(usersTwo)
+    return usersTwo
 
 data1 = read_data('data/result.json')
 print(find_all_users_name(data1))
